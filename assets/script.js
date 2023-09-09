@@ -20,6 +20,24 @@ $("#btn9").on("click", function (){
   localStorage.setItem("9", JSON.stringify(eventText9.val()));
 });
 
+$("#btn9").on("click", function (){
+  var eventText10 = $("#10");
+  console.log(eventText10);
+  localStorage.setItem("10", JSON.stringify(eventText9.val()));
+});
+
+$("#btn9").on("click", function (){
+  var eventText11 = $("11");
+  console.log(eventText11);
+  localStorage.setItem("11", JSON.stringify(eventText9.val()));
+});
+
+$("#btn9").on("click", function (){
+  var eventText12 = $("#12");
+  console.log(eventText12);
+  localStorage.setItem("12", JSON.stringify(eventText9.val()));
+});
+
 function init () {
   $("#9").val(JSON.parse(localStorage.getItem("9")));
 }
