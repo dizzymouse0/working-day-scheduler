@@ -14,6 +14,12 @@ var saveButton = document.querySelector(".saveBtn");
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
 
+$("#btn9").on("click", function (){
+  var eventText9 = $("#9");
+  console.log(eventText9);
+  localStorage.setItem("9", JSON.stringify(eventText9.val()));
+});
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
