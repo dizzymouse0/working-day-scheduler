@@ -20,22 +20,52 @@ $("#btn9").on("click", function (){
   localStorage.setItem("9", JSON.stringify(eventText9.val()));
 });
 
-$("#btn9").on("click", function (){
+$("#btn10").on("click", function (){
   var eventText10 = $("#10");
   console.log(eventText10);
   localStorage.setItem("10", JSON.stringify(eventText9.val()));
 });
 
-$("#btn9").on("click", function (){
+$("#btn11").on("click", function (){
   var eventText11 = $("11");
   console.log(eventText11);
   localStorage.setItem("11", JSON.stringify(eventText9.val()));
 });
 
-$("#btn9").on("click", function (){
+$("#btn12").on("click", function (){
   var eventText12 = $("#12");
   console.log(eventText12);
   localStorage.setItem("12", JSON.stringify(eventText9.val()));
+});
+
+$("#btn13").on("click", function (){
+  var eventText13 = $("#13");
+  console.log(eventText13);
+  localStorage.setItem("13", JSON.stringify(eventText9.val()));
+});
+
+$("#btn14").on("click", function (){
+  var eventText14 = $("#14");
+  console.log(eventText14);
+  localStorage.setItem("14", JSON.stringify(eventText9.val()));
+});
+
+$("#btn15").on("click", function (){
+  var eventText15 = $("#15");
+  console.log(eventText15);
+  localStorage.setItem("15", JSON.stringify(eventText9.val()));
+});
+
+$("#btn16").on("click", function (){
+  var eventText16 = $("#16");
+  console.log(eventText16);
+  localStorage.setItem("16", JSON.stringify(eventText9.val()));
+});
+
+$("#btn17").on("click", function (){
+  var eventText17 = $("#17");
+  console.log(eventText17);
+  localStorage.setItem("17", JSON.stringify(eventText9.val()));
 });
 
 function init () {
