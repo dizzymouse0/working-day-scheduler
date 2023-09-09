@@ -1,7 +1,12 @@
 var currentDate = moment().format("dddd, MMMM Do, YYYY h:mmA");
 $("#currentDay").text(currentDate);
 
-
+var currentTime
+var presentTime = document.querySelector(".present");
+var futureTime = document.querySelector(".future");
+var pastTime = document.querySelector(".past");
+var descriptionEvent = document.querySelector(".description");
+var saveButton = document.querySelector(".saveBtn");
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
