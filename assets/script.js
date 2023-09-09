@@ -1,7 +1,9 @@
 var currentDate = moment().format("dddd, MMMM Do, YYYY h:mmA");
 $("#currentDay").text(currentDate);
 
-var currentTime
+var currentTime = moment().hour();
+console.log(currentTime);
+
 var presentTime = document.querySelector(".present");
 var futureTime = document.querySelector(".future");
 var pastTime = document.querySelector(".past");
