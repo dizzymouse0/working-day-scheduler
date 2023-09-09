@@ -1,6 +1,10 @@
+//Adding global variables
+
+//Current date and time located in header
 var currentDate = moment().format("dddd, MMMM Do, YYYY h:mmA");
 $("#currentDay").text(currentDate);
 
+//Current time in setStuatus function
 var currentTime = moment().hour();
 console.log(currentTime);
 
@@ -9,13 +13,12 @@ var futureTime = document.querySelector(".future");
 var pastTime = document.querySelector(".past");
 var descriptionEvent = document.querySelector(".description");
 var saveButton = document.querySelector(".saveBtn");
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 
+//Object hour containing time key and open strings for text impus
 var hour = {9: '', 10: '', 11: '', 12: '', 13: '', 14: '', 15: '', 16: '', 17: ''};
 console.log(Object.keys(hour));
 
+//Click events that start the function which saves text to local storage
 $("#btn9").on("click", function (){
   var eventText9 = $("#9");
   console.log(eventText9);
@@ -70,6 +73,7 @@ $("#btn17").on("click", function (){
   localStorage.setItem("17", JSON.stringify(eventText17.val()));
 });
 
+//Funtion that loads information saved in local storage to render in timeblocks
 function init () {
   $("#9").val(JSON.parse(localStorage.getItem("9")));
   $("#10").val(JSON.parse(localStorage.getItem("10")));
@@ -85,6 +89,7 @@ function init () {
 
 init()
 
+//Checks current time then updates event status
 function setStatus(){
   for (var i = 9; i < 18; i++) {
 
