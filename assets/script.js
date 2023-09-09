@@ -70,6 +70,15 @@ $("#btn17").on("click", function (){
 
 function init () {
   $("#9").val(JSON.parse(localStorage.getItem("9")));
+  $("#10").val(JSON.parse(localStorage.getItem("9")));
+  $("#11").val(JSON.parse(localStorage.getItem("9")));
+  $("#12").val(JSON.parse(localStorage.getItem("9")));
+  $("#13").val(JSON.parse(localStorage.getItem("9")));
+  $("#14").val(JSON.parse(localStorage.getItem("9")));
+  $("#15").val(JSON.parse(localStorage.getItem("9")));
+  $("#16").val(JSON.parse(localStorage.getItem("9")));
+  $("#17").val(JSON.parse(localStorage.getItem("9")));
+
 }
 
 init()
